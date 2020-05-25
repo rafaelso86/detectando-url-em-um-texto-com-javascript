@@ -1,6 +1,8 @@
-# detectar_url_em_texto
-Detectando url em um texto
+# Detectando url em um texto com Javascript
 
+Função que detecta se um link foi passando dentro de um texto.
+
+```javascript
 function urlify(text) {
     var urlRegex = /(((https?:\/\/)|(www\.))[^\s]+)/g;
     //var urlRegex = /(https?:\/\/[^\s]+)/g;
@@ -9,3 +11,4 @@ function urlify(text) {
         return '<a href="' + url2 + '" target="_blank">' + url + '</a>';
     })
 }
+```
